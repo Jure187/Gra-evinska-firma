@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+header {
+  background-color: #356aac;
+  color: white;
+  font-size: 18px;
+  padding: 15px 0px;
+}
+.icon-left {
+  margin-right: 20px;
+  display: flex;
+}
+.icon-right {
+  display: flex;
+}
+header i {
+  margin-right: 7px;
+}
+.section-pocetak {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+}
+.section-pocetak img {
+  width: 250px;
+}
+.nav a {
+  border: none;
+  background-color: unset;
+  margin-left: 30px;
+  font-size: 25px;
+  color: #356aac;
+  text-decoration: none;
+}
+.nav a:hover {
+  border-bottom: 3px solid #356aac;
+}
+.section-background {
+  width: 100%;
+  background-image: url("/img/zgrada3.png");
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.content {
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content button {
+  background-color: #356aac;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.section-usluge h1 {
+  text-align: center;
+  color: #356aac;
+  margin: 50px 0px;
+}
+.box3 {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  background-color: #356aac;
+  margin: 0px 10px;
+  text-align: center;
+  width: 350px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+}
+.box i {
+  color: rgb(255, 165, 0);
+  font-size: 50px;
+  margin: 20px 0px;
+}
+.box h3 {
+  color: rgb(255, 165, 0);
+  margin-bottom: 20px;
+}
+.section-o-nama {
+  display: flex;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.section-o-nama p {
+  line-height: 30px;
+}
+.left {
+  width: 49%;
+  background-color: #356aac;
+  color: white;
+}
+.left h1 {
+  text-align: center;
+  margin: 30px 0px;
+}
+.left p {
+  padding: 10px 30px;
+}
+.right {
+  width: 49%;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+}
+.section-vrste-poslova {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-vrste-poslova h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #356aac;
+}
+.text-rosina {
+  color: #356aac;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.image-slider {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+.slider-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+.slider-img.active {
+  opacity: 1;
+}
+.btn-slider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+}
+#btn-prev {
+  left: 10px;
+}
+#btn-next {
+  right: 10px;
+}
+.svi-projekti-1 {
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+}
+.svi-projekti-2 {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+}
+.projekt {
+  width: 19%;
+  text-align: center;
+}
+.projekt img {
+  width: 100%;
+  height: 80%;
+}
+.projekt p {
+  color: #356aac;
+  font-size: 20px;
+}
+.section-zatrazite-ponudu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 165, 0);
+  width: 100%;
+  height: 330px;
+}
+.ponuda-left {
+  text-align: left;
+  width: 50%;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+}
+.ponuda-left h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ponuda-right button {
+  border: none;
+  background-color: #356aac;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.section-kontakt {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px 0px;
+  font-size: 18px;
+}
+.kontakt {
+  display: flex;
+  color: #356aac;
+  justify-content: center;
+  align-items: center;
+}
+.kontakt i {
+  margin-right: 5px;
+  font-size: 35px;
+}
+.section-opci-podaci {
+  display: flex;
+  background-color: #356aac;
+  height: 450px;
+}
+.opci-podaci-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.opci-podaci-left h1 {
+  margin-bottom: 18px;
+}
+.opci-podaci-left p {
+  font-size: 18px;
+}
+.opci-podaci-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.headerMail {
+  background-color: unset;
+  border: none;
+  color: white;
+  font-size: 17px;
+}
+
+@media (max-width: 750px) {
+  .section-pocetak {
+    flex-direction: column;
+  }
+  .nav {
+    margin: 20px 0px;
+  }
+  .box3 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .box {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .box p {
+    padding: 0px 15px;
+  }
+  .section-o-nama {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    height: 400px;
+  }
+  .svi-projekti-1 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .projekt {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .svi-projekti-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .section-zatrazite-ponudu {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projekt img {
+    height: auto;
+  }
+  .ponuda-left {
+    width: 100%;
+  }
+  .ponuda-left h1 {
+    margin-top: 15px;
+  }
+  .ponuda-left p {
+    padding: 0px 20px;
+    margin-bottom: 20px;
+  }
+  .ponuda-right button {
+    margin-bottom: 20px;
+  }
+  .section-kontakt {
+    flex-direction: column;
+    margin: 30px 0px;
+  }
+  .kontakt {
+    margin-bottom: 30px;
+  }
+  .section-opci-podaci {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .opci-podaci-left {
+    margin: 30px 0px;
+  }
+  .opci-podaci-right {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav a {
+    margin: 15px 0px;
+  }
+}
